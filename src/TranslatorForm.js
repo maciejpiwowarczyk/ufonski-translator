@@ -8,9 +8,12 @@ class TranslatorForm extends React.Component {
     this.state = { translated: "" };
 
     this.dictionary = {
-      "a" : { char: "łą", sym: "⚡" },
-      "b" : { char: "te", sym: "☕" },
-    };
+      "a" : { char: "lą", sym: "L" },
+      "b" : { char: "sej", sym: "c" },
+      "c" : { char: "fo", sym: "4" }, 
+      "d" : { char: "jy", sym: "oo" },
+      "e" : { char: "ty", sym: "R" },
+    }
   }
 
   handleChange = (event) => {
