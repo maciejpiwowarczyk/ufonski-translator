@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import TranslatorForm from './App';
+import TranslatorForm from './TranslatorForm';
 
 ReactDOM.render(  
   <React.StrictMode>    
