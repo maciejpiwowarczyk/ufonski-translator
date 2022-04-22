@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ufonski-translator/static/css/main.073c9b0a.css",
-    "main.js": "/ufonski-translator/static/js/main.10ce0b4b.js",
+    "main.js": "/ufonski-translator/static/js/main.562f3f11.js",
     "static/js/787.184ce276.chunk.js": "/ufonski-translator/static/js/787.184ce276.chunk.js",
     "static/media/logo.svg": "/ufonski-translator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ufonski-translator/index.html",
     "main.073c9b0a.css.map": "/ufonski-translator/static/css/main.073c9b0a.css.map",
-    "main.10ce0b4b.js.map": "/ufonski-translator/static/js/main.10ce0b4b.js.map",
+    "main.562f3f11.js.map": "/ufonski-translator/static/js/main.562f3f11.js.map",
     "787.184ce276.chunk.js.map": "/ufonski-translator/static/js/787.184ce276.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.10ce0b4b.js"
+    "static/js/main.562f3f11.js"
   ]
 }
