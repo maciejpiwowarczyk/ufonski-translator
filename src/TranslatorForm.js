@@ -13,7 +13,25 @@ class TranslatorForm extends React.Component {
       "c" : { char: "fo", sym: "4" }, 
       "d" : { char: "jy", sym: "oo" },
       "e" : { char: "ty", sym: "R" },
-    }
+      "f" : { char: "pą", sym: "P" },
+      "g" : { char: "ve", sym: "v" },
+      "h" : { char: "ką", sym: "7" },
+      "i" : { char: "cy", sym: "1" },
+      "j" : { char: "sa", sym: "d" },
+      "k" : { char: "te", sym: "t" },
+      "l" : { char: "dy", sym: "LL" },
+      "m" : { char: "mo", sym: "0" },
+      "n" : { char: "na", sym: "m" },
+      "o" : { char: "są", sym: "$" },
+      "p" : { char: "tu", sym: "3" },
+      "r" : { char: "sy", sym: "z" },
+      "s" : { char: "p", sym: "+" },
+      "t" : { char: "y", sym: "-" },
+      "u" : { char: "ky", sym: "-" },
+      "w" : { char: "fe", sym: "/-/-/" },
+      "z" : { char: "kaj", sym: "[]" },
+      "y" : { char: "jo", sym: "'y'" },
+    };
   }
 
   handleChange = (event) => {
@@ -26,7 +44,7 @@ class TranslatorForm extends React.Component {
     var symbols = "";
     for (var i = 0; i < orig.length; i++) 
     {
-      var c = orig[i];
+      var c = orig.toLowerCase()[i];
       if (this.dictionary[c])
       {
         translated += this.dictionary[c].char;
