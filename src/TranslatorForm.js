@@ -8,29 +8,36 @@ class TranslatorForm extends React.Component {
     this.state = { translated: "" };
 
     this.dictionary = {
-      "a" : { char: "lą", sym: "L" },
-      "b" : { char: "sej", sym: "c" },
-      "c" : { char: "fo", sym: "4" }, 
-      "d" : { char: "jy", sym: "oo" },
-      "e" : { char: "ty", sym: "R" },
-      "f" : { char: "pą", sym: "P" },
-      "g" : { char: "ve", sym: "v" },
-      "h" : { char: "ką", sym: "7" },
-      "i" : { char: "cy", sym: "1" },
-      "j" : { char: "sa", sym: "d" },
-      "k" : { char: "te", sym: "t" },
-      "l" : { char: "dy", sym: "LL" },
-      "m" : { char: "mo", sym: "0" },
-      "n" : { char: "na", sym: "m" },
-      "o" : { char: "są", sym: "$" },
-      "p" : { char: "tu", sym: "3" },
-      "r" : { char: "sy", sym: "z" },
-      "s" : { char: "p", sym: "+" },
-      "t" : { char: "y", sym: "-" },
-      "u" : { char: "ky", sym: "-" },
-      "w" : { char: "fe", sym: "/-/-/" },
-      "z" : { char: "kaj", sym: "[]" },
-      "y" : { char: "jo", sym: "'y'" },
+      "a" : { char: "1", sym: "jeden" },
+      "ą" : { char: "2", sym: "dwa" },
+      "b" : { char: "3", sym: "trzy" },
+      "c" : { char: "4", sym: "cztery" }, 
+      "ć" : { char: "5", sym: "pięć" }, 
+      "d" : { char: "6", sym: "sześć" },
+      "e" : { char: "7", sym: "siedem" },
+      "ę" : { char: "8", sym: "osiem" },
+      "f" : { char: "9", sym: "dziewięć" },
+      "g" : { char: "10", sym: "dziesięć" },
+      "h" : { char: "11", sym: "jedenaście" },
+      "i" : { char: "12", sym: "dwanaście" },
+      "j" : { char: "13", sym: "trzynaście" },
+      "k" : { char: "14", sym: "czternaście" },
+      "l" : { char: "15", sym: "piętnaście" },
+      "ł" : { char: "16", sym: "szesnaście" },      
+      "m" : { char: "17", sym: "siedemnaście" },
+      "n" : { char: "18", sym: "osiemnaście" },
+      "o" : { char: "19", sym: "dziewietnaście" },
+      "p" : { char: "20", sym: "dwadzieścia" },
+      "r" : { char: "21", sym: "dwadzieścia jeden" },
+      "s" : { char: "22", sym: "dwadzieścia dwa" },
+      "t" : { char: "23", sym: "dwadzieścia trzy" },
+      "u" : { char: "24", sym: "dwadzieścia cztery" },
+      "w" : { char: "25", sym: "dwadzieścia pięć" },
+      "z" : { char: "27", sym: "dwadzieścia siedem" },
+      "y" : { char: "26", sym: "'dwadzieścia sześć'" },
+      "ź" : { char: "28", sym: "'dwadzieścia osiem'" },
+      "ż" : { char: "29", sym: "'dwadzieścia dziewięć'" },
+      " " : { char: " ", sym: "spacja" },
     };
   }
 
@@ -55,7 +62,12 @@ class TranslatorForm extends React.Component {
         translated += c;
         symbols += c;
       }
-    }
+
+      if (i < orig.length - 1)
+      {
+        symbols += "-";
+      }
+    }    
     return `${translated} (${symbols})`;
   }
 
@@ -65,10 +77,10 @@ class TranslatorForm extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />          
           <label>
-            Enter the phrase to translate:<br/>
+            Słowo do przetłumaczenia:<br/>
           <input type="text" name="original" onChange={this.handleChange} />
           </label>
-          <p>In Ufoński it's: {this.state.translated}</p>
+          <p>Po pierdyklesku to: {this.state.translated}</p>
         </header>
       </div>
     );
